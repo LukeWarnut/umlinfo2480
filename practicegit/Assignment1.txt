@@ -3,3 +3,10 @@ Assignment 1:
 Question: "Why did the chicken cross the road?"
 
 Give me your best answer: Because it felt like it.
+
+Makes sense. It's a free country. Why shouldn't he? 
+
+There was one step you missed which was to create a branch called "week 1". Each week,
+we'll make a new branch, do the work, and then merge it back into the main branch after I've
+had a chance to check it out. I made the week 1 branch here with my notes. The directions
+on how to merge them into the main branch are the first step this week. 
