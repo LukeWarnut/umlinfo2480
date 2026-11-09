@@ -2,3 +2,51 @@
 <p>take one of your 10 Books in Excel books and create a BoxLang structure out of it's metadata. 
     Use multiple structures to model as much of the metadata as you can including data from all four Excel Sheets 
     (or SQL Tables). When you are done, dump out each of the objects you created.</p>
+
+<hr/>
+
+<h3>Play Nice: The Rise, Fall, and Future of Blizzard Entertainment</h3>
+
+<bx:set author = {
+    firstName = "Jason",
+    lastName = "Schreier",
+    fullName = "Schreier, Jason"
+}>
+
+<bx:set genre = {
+    category = "Nonfiction",
+    subcategory = "History",
+    fullName = "Nonfiction/History"
+}>
+
+<bx:set publisher = {
+    name = "Grand Central Publishing"
+}>
+
+<bx:set isbn = {
+    isbn13 = "978-1-5387-2542-9",
+    isbn10 = "1538725428"
+}>
+
+<bx:set format = {
+    binding = "Hardcover",
+    edition = "1st",
+    pageCount = 376
+}>
+
+<bx:set book = {
+    title = "Play Nice: The Rise, Fall, and Future of Blizzard Entertainment",
+    yearPublished = 2024,
+    author = author,
+    genre = genre,
+    publisher = publisher,
+    isbn = isbn,
+    format = format
+}>
+
+<bx:dump var="#author#" label="author">
+<bx:dump var="#genre#" label="genre">
+<bx:dump var="#publisher#" label="publisher">
+<bx:dump var="#isbn#" label="isbn">
+<bx:dump var="#format#" label="format">
+<bx:dump var="#book#" label="book">

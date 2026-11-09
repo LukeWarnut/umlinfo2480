@@ -2,7 +2,7 @@
     Open the page in a browser and you should see the current date and time as a time stamp.</p>
 
 
-
+    <bx:output>#now()#</bx:output>
 
     <hr/>
 
