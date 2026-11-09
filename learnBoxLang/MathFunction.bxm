@@ -1,6 +1,24 @@
 <h3>Math Functions</h3>
 Exercise: Using the function in the main article as a model, write a function that will multiply two numbers together. Call the function and pass in several different combination of numbers (i.e. <code>#addNumbers(5,3)# &lt;br/> #addNumbers(100,223)# </code> etc.)
 
+<bx:output>
+<p>
+5 x 3 = #multiplyNumbers(5,3)#<br />
+100 x 223 = #multiplyNumbers(100,223)#<br />
+7 x 8 = #multiplyNumbers(7,8)#<br />
+12 x 12 = #multiplyNumbers(12,12)#<br />
+-4 x 6 = #multiplyNumbers(-4,6)#<br />
+2.5 x 4 = #multiplyNumbers(2.5,4)#<br />
+99 x 0 = #multiplyNumbers(99,0)#
+</p>
+</bx:output>
 
 <hr />
 Exercise: Can you make a form that accepts two numbers, submits it to the same page and then uses the function to add the two numbers together? All the information you need is in these docs.
+
+
+<bx:function name="multiplyNumbers" access="private" returntype="numeric">
+    <bx:argument name="firstnum" type="numeric" />
+    <bx:argument name="secondnum" type="numeric" />
+    <bx:return firstnum * secondnum />
+</bx:function>
