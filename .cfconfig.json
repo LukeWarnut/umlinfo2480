@@ -19,7 +19,7 @@
                 }
             },
             "datasources" : {
-                "**DSOURCENAME**":{
+                "Luke_Warner":{
                     "database":"${PDBNAME}",
                     "dbdriver":"mysql",
                     "host":"${PHOST}",
