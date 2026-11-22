@@ -1,8 +1,20 @@
-<bx:dump var="#form#" />
 <bx:output>
+<bx:if form.keyExists("title")>
+    <bx:dump var="#form#" />
+    <bx:set articleService.saveArticle(form.title, form.description, form.active) />
+</bx:if>
+
+<bx:set allArticles = articleService.allArticles() />
+
 <div class="row">
     <div class="col-sm-3">
-
+        <ul class="list-group">
+            <bx:loop array="#allArticles#" index="article">
+                <li>
+                    #article.title#
+                </li>
+            </bx:loop>
+        </ul>
     </div>
     <div class="col-sm-9">
         <form method="POST" action="#cgi.script_name#" >
