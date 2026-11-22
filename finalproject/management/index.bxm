@@ -10,15 +10,16 @@
     <link href="../includes/css/mycss.css" rel="stylesheet"/>
 </head>
 <body>
+<bx:param name="tool" default="dashboard" />
+<bx:param name="currClass" default="" />
 <div id="wrapper" class="container">
     <bx:include template="header.bxm" />
-    <bx:include template="horizontalnav.bxm" />
+    <div id="horizontalnav" class="row">
+        <bx:include template="managementNav.bxm" />
+    </div>
     <div id="maincontent" class="row">
-        <section id="center" class="col-sm-9 order-last">
-            <bx:include template="carousel.bxm" />
-        </section>
-        <section id="left" class="col-sm-3 order-first">
-            <bx:include template="genrenav.bxm" />
+        <section id="center" class="col-sm-12">
+            <bx:include template="#tool#.bxm" />
         </section>
     </div>
     <footer id="footer" class="row" style="text-align: center">
