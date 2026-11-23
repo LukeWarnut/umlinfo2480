@@ -2,6 +2,7 @@ class {
 
     this.name = 'Luke_Warner';
     this.dsource = 'Luke_Warner';
+    this.datasource = 'Luke_Warner';
     this.sessionmanagement = 'true';
 
     public function onApplicationStart() {
